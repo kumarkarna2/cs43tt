@@ -7,7 +7,15 @@
 
 .background {
     background: radial-gradient(rgb(231, 30, 73), rgb(46, 4, 80));
-    height: 100hv;
+    height: 100vh;
+}
+p {
+    text-align: center;
+    color: bisque;
+}
+h3 {
+    text-align: center;
+    color: rgb(41, 236, 129);
 }
 
 .timetable {
@@ -36,14 +44,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-p {
-    text-align: center;
-    color: bisque;
-}
-h3 {
-    text-align: center;
-    color: rgb(41, 236, 129);
 }
 
 .content {
@@ -133,13 +133,13 @@ h2 {
     }
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 771px) {
     .phone {
         display: none;
     }
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 770px) {
     .background {
         height: auto;
         padding: 20px;
