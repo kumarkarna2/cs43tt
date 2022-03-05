@@ -133,7 +133,7 @@ h2 {
     }
 }
 
-@media only screen and (min-width: 771px) {
+@media only screen and (min-width: 360px) {
     .phone {
         display: none;
     }
