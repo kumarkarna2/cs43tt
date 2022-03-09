@@ -17,6 +17,10 @@ h3 {
     text-align: center;
     color: rgb(41, 236, 129);
 }
+.widget {
+    text-align: center;
+    font-weight: bolder;
+}
 
 .timetable {
     height: 60px;
