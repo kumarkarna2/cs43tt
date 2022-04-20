@@ -14,7 +14,7 @@ if (screen.width <= 720) {
         .then((data) => {
             var table = document.getElementById("phone");
 
-            for (var i = 0; i < data.days.length; i++) {
+            for (var i = 1; i < data.days.length; i++) {
                 if (data.days[i].day == day) {
                     console.log(i);
                     table.innerHTML +=
@@ -26,9 +26,7 @@ if (screen.width <= 720) {
                     var dayname = document.getElementById(day);
                     for (var j = 0; j < data.days[i].subjects.length; j++) {
                         dayname.innerHTML +=
-                            '<a href="' +
-                            data.days[i].subjects[j].link +
-                            '" target="_blank"><div class="period"><h2>' +
+                            '<div class="period"><h2>' +
                             data.days[i].subjects[j].name +
                             "<br>" +
                             data.days[i].subjects[j].time +
