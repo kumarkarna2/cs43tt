@@ -26,9 +26,7 @@ if (screen.width <= 720) {
                     var dayname = document.getElementById(day);
                     for (var j = 0; j < data.days[i].subjects.length; j++) {
                         dayname.innerHTML +=
-                            '<a href="' +
-                            data.days[i].subjects[j].link +
-                            '" target="_blank"><div class="period"><h2>' +
+                            '<div class="period"><h2>' +
                             data.days[i].subjects[j].name +
                             "<br>" +
                             data.days[i].subjects[j].time +
@@ -59,7 +57,6 @@ fetch("./data.json")
             var day = document.getElementById(dayname);
             for (var j = 0; j < data.days[i].subjects.length; j++) {
                 day.innerHTML +=
-                    data.days[i].subjects[j].link +
                     '" <div class="period"><h2>' +
                     data.days[i].subjects[j].name +
                     "</h2><p>";
