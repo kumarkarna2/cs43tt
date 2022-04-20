@@ -57,7 +57,6 @@ fetch("./data.json")
             var day = document.getElementById(dayname);
             for (var j = 0; j < data.days[i].subjects.length; j++) {
                 day.innerHTML +=
-                    data.days[i].subjects[j].link +
                     '" <div class="period"><h2>' +
                     data.days[i].subjects[j].name +
                     "</h2><p>";
